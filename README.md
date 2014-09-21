@@ -10,3 +10,7 @@ For example, the following tweet:
 would result in the following response from @suggestomatic:
 
 ![why are cats](http://i.imgur.com/wBG0vwM.png)
+
+## more details (and code comments) coming soon
+
+Suggestomatic avatar by [Poohbers](http://poohbers.com)
