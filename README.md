@@ -8,4 +8,4 @@ For example, the following tweet:
 
 would result in the following response from @suggestomatic:
 
-[why are cats](http://i.imgur.com/wBG0vwM.png)
+![why are cats](http://i.imgur.com/wBG0vwM.png)
