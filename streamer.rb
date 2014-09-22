@@ -19,6 +19,14 @@ class TweetHandler
     end
   end
 
+  def mentions_others(tweet)
+    if tweet.text.scan(/@\S+/).size > 1
+      true
+    else
+      false
+    end
+  end
+
   def graceful_close
     @tweetsaver.close
   end
@@ -32,7 +40,7 @@ class TweetHandler
 
   def handle_tweet(tweet)
     text = tweet.text.dup
-    if self.is_reply(tweet)
+    if self.is_reply(tweet) || self.mentions_others(tweet)
     else
       self.make_record(tweet)
     end
